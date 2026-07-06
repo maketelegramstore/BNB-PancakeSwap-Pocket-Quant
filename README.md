@@ -18,7 +18,7 @@
 Вам не нужен сервер. Проект работает полностью на бесплатной инфраструктуре Google (Google Sheets + Apps Script).
 
 ### Шаг 1. Создание копии базы данных
-1. Перейдите по ссылке на шаблон Google Таблицы: **[PancakeSwap Pocket Quant (Шаблон)](https://docs.google.com/spreadsheets/d/1wmmgXLhlj2hRxWWPyx4ZrrU9ix_CcNG4NcTSOcTYCac/copy)**
+1. Перейдите по ссылке на шаблон Google Таблицы: **[PancakeSwap Pocket Quant (Шаблон)](https://docs.google.com/spreadsheets/d/1wmmgXLhIj2hRxWWPyx4ZrrU9ix_CcNG4NcTSOcTYCac/copy)**
 2. Нажмите синюю кнопку **«Сделать копию»** (Make a copy). *Вместе с таблицей на ваш Google Диск скопируется и весь программный код бота.*
 
 ### Шаг 2. Получение API ключей
