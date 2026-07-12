@@ -31,7 +31,7 @@ You will need 3 keys and your Telegram ID to operate the bot:
 
 ### Step 3. Configuration Setup
 Open your copied Google Spreadsheet. Go to the **`data`** sheet.
-Fill in the corresponding cells in column `B` with your data:
+Fill in the corresponding cells in column `B` with your data (⚠️ **make sure there are no extra spaces**):
 * Cell `B1` ➔ Token from BotFather
 * Cell `B2` ➔ Your Telegram ID
 * Cell `B3` ➔ Groq API Key
@@ -40,20 +40,21 @@ Fill in the corresponding cells in column `B` with your data:
 
 ### Step 4. Publish Webhook (Deploying the script)
 To allow Telegram to send messages to your script, you need to publish it as a web app:
-1. In the top menu of Google Sheets, click `Extensions` ➔ `Apps Script`.
+1. In the top menu of Google Sheets, click `Extensions` ➔ `Apps Script`. 
 2. In the code editor that opens, click the blue **Deploy** button in the top right corner ➔ **New deployment**.
-3. Select type: **Web app**.
+3. Select type: **Web app** (gear icon ⚙️ next to "Select type").
 4. Access settings:
-   * Execute as: **Me**.
+   * Execute as: **Me** (your email).
    * Who has access: **Anyone**.
-5. Click **Deploy**. On the first run, Google will ask for permissions — agree to everything.
+5. Click **Deploy**. On the first run, Google will ask for permissions — click **Review permissions**. 
+   * ⚠️ **IMPORTANT:** Google will show a warning "Google hasn’t verified this app". Click **Advanced** at the bottom, then click **Go to Untitled project (unsafe)**. Then click **Allow** at the very bottom.
 6. A window with a **Web app URL** will appear at the end. Copy it!
 
 ### Step 5. Link Webhook and Commands
 Return to Google Sheets to the **`data`** sheet:
 1. Paste the **Web app URL** copied in the previous step into cell **`B6`**.
-2. Click the link in cell **`A6`** (`linkApp 🔥 set WEBHOOK`) and follow it. You should see a Telegram message in the browser: `{"ok":true,"result":true,"description":"Webhook was set"}`.
-3. Click the link in cell **`A7`** (`📋 Setup Commands`) and follow it. This will add a convenient command menu to your bot. The browser will show `{"ok":true,"result":true}`.
+2. Click on cell **`A6`** (`linkApp 🔥 set WEBHOOK`). A small popup with a link will appear above or below the cell — click that link. You should see a Telegram message in the new browser tab: `{"ok":true,"result":true,"description":"Webhook was set"}`.
+3. Keep the tab open or close it, then go back to the spreadsheet. Click on cell **`A7`** (`📋 Setup Commands`) and follow its popup link. This will add a convenient command menu to your bot. The browser will show `{"ok":true,"result":true}`.
 
 🎉 **Done! Go to your bot in Telegram and send it a voice or text message with a strategy idea.**
 
